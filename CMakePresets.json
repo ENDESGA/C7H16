@@ -1,0 +1,128 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "Common",
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/out/${presetName}",
+      "hidden": true
+    },
+    {
+      "name": "GCC",
+      "inherits": "Common",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "gcc",
+        "CMAKE_C_FLAGS_DEBUG": "-g -Og",
+        "CMAKE_C_FLAGS_RELEASE": "-O3 -march=native -fno-math-errno -fno-trapping-math"
+      }
+    },
+    {
+      "name": "TinyCC",
+      "inherits": "Common",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "${sourceDir}/../TOOLS/TCC/tcc.exe",
+        "CMAKE_C_FLAGS": "-I ${sourceDir}/../TOOLS/TCC/include"
+      }
+    },
+    {
+      "name": "Clang",
+      "inherits": "Common",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang"
+      }
+    },
+    {
+      "name": "MSVC",
+      "inherits": "Common",
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "cl",
+        "CMAKE_C_FLAGS": "/std:clatest",
+        "CMAKE_C_FLAGS_DEBUG": "/Od /Zi",
+        "CMAKE_C_FLAGS_RELEASE": "/O2 /GL /Oi /Ot /Oy /fp:fast",
+        "CMAKE_C_FLAGS_MINSIZEREL": "/O1 /GL /Gy /Os /Oy /fp:fast /DNDEBUG"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "Default",
+      "hidden": true,
+      "inheritConfigureEnvironment": true,
+      "jobs": 10
+    },
+
+    {
+      "name": "GCC Common",
+      "inherits": "Default",
+      "hidden": true,
+      "configurePreset": "GCC"
+    },
+    {
+      "name": "TinyCC Common",
+      "inherits": "Default",
+      "hidden": true,
+      "configurePreset": "TinyCC"
+    },
+    {
+      "name": "Clang Common",
+      "inherits": "Default",
+      "hidden": true,
+      "configurePreset": "Clang"
+    },
+    {
+      "name": "MSVC Common",
+      "inherits": "Default",
+      "hidden": true,
+      "configurePreset": "MSVC"
+    },
+
+    {
+      "name": "Debug (GCC)",
+      "inherits": "GCC Common",
+      "configuration": "Debug"
+    },
+    {
+      "name": "Release (GCC)",
+      "inherits": "GCC Common",
+      "configuration": "Release"
+    },
+
+    {
+      "name": "Debug (TinyCC)",
+      "inherits": "TinyCC Common",
+      "configuration": "Debug"
+    },
+    {
+      "name": "Release (TinyCC)",
+      "inherits": "TinyCC Common",
+      "configuration": "Release"
+    },
+
+    {
+      "name": "Debug (Clang)",
+      "inherits": "Clang Common",
+      "configuration": "Debug"
+    },
+    {
+      "name": "Release (Clang)",
+      "inherits": "Clang Common",
+      "configuration": "Release"
+    },
+
+    {
+      "name": "Debug (MSVC)",
+      "inherits": "MSVC Common",
+      "configuration": "Debug"
+    },
+    {
+      "name": "Release (MSVC)",
+      "inherits": "MSVC Common",
+      "configuration": "Release"
+    }
+  ]
+}
