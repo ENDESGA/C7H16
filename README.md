@@ -9,6 +9,15 @@ the best heptane code is read with *zero comments*, little decrypting of meaning
 *C7H16 allows a more uniform, strong understanding of the computer's actions. Just bytes, types, references, and functions.*
 
 -------
+## systematic rules and restrictions
+- everything is just bytes and references.
+- newly allocated bytes are zeroed.
+- all `ref` types are constant and restricted.
+- structs are packed, with descending-size components.
+- text characters are unsigned bytes.
+- function parameters are constant via `in`.
+- all memory is contained and tracked.
+-------
 -------
 -------
 -------
