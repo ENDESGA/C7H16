@@ -1,22 +1,11 @@
-![heptane](https://github.com/ENDESGA/C7H16/blob/main/logo.png)
-# ***C7H16 ------- ( heptane )***
-***an explicit, minimal, esoteric C abstraction to fuel graphical applications and interfaces.***
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/14fd957f-8d6c-48bf-aae5-f2e8ce228d01" alt="heptane">
+</p>
 
-reimagining C in a vacuum, using short, explicit words from the average English-speaker's lexicon.
-the goal is to maximize legibility and literal understanding upon initial code reading; leaning on strict syntax and a clean paradigm.
-the best heptane code is read with *zero comments*, little decrypting of meaning or intent.
+# ***C7H16*** *-------< heptane framework >*
 
-*C7H16 allows a more uniform, strong understanding of the computer's actions. Just bytes, types, references, and functions.*
+am **H**-conforming single-file software rendering library that's a fuel for graphical interfaces.
 
--------
-## systematic rules and restrictions
-- everything is just bytes and references.
-- newly allocated bytes are zeroed.
-- all `ref` types are constant and restricted.
-- structs are packed, with descending-size components.
-- text characters are unsigned bytes.
-- function parameters are constant via `in`.
-- all memory is contained and tracked.
 -------
 -------
 -------
