@@ -2,9 +2,9 @@
   <img src="https://github.com/user-attachments/assets/14fd957f-8d6c-48bf-aae5-f2e8ce228d01" alt="heptane">
 </p>
 
-# ***C7H16*** *-------< hept framework >*
+# ***C7H16*** *- < hept framework >*
 
-am **H**-conforming single-file software rendering library that's a fuel for graphical interfaces.
+an **H**-conforming single-file software rendering library that's a fuel for graphical interfaces.
 
 -------
 -------
