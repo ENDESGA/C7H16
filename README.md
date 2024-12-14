@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/14fd957f-8d6c-48bf-aae5-f2e8ce228d01" alt="heptane">
+	<img src="https://github.com/user-attachments/assets/3cda64ae-3012-4503-85d6-8b31b9d67827" alt="hept render">
+	<img src="https://github.com/user-attachments/assets/75fa9471-3ae4-44c5-94d7-d35a1f093003" alt="heptane">
 </p>
 
-# ***C7H16*** *- < hept framework >*
+# ***C7H16*** *- < "hept render" >*
 
 an **H**-conforming single-file software rendering library that's a fuel for graphical interfaces.
 
