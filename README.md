@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/user-attachments/assets/3cda64ae-3012-4503-85d6-8b31b9d67827" alt="hept render">
+	<img src="https://github.com/user-attachments/assets/b2d2d6de-ee82-430e-8022-5fc134b55b67" alt="hept render">
 	<img src="https://github.com/user-attachments/assets/75fa9471-3ae4-44c5-94d7-d35a1f093003" alt="heptane">
 </p>
 
